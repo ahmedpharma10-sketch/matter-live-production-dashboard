@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-29T13:29:41.943975+00:00",
+  "updated_at": "2026-08-29T13:49:21.905107+00:00",
   "total_units": 166,
   "counts": {
     "ACCEPTED_CURRENT": 17,
     "ATTEMPTED_NOT_ACCEPTED": 1,
-    "DEFERRED_BLOCKER": 8,
-    "NOT_YET_ATTEMPTED": 140
+    "DEFERRED_BLOCKER": 9,
+    "NOT_YET_ATTEMPTED": 139
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -153,6 +153,22 @@
       "status": "DEFERRED_BLOCKER",
       "current_recovery_units": [
         "MATTER-009"
+      ]
+    },
+    {
+      "shot_unit_id": "MATTER-019",
+      "failure_class": "MULTI_SPEAKER_IDENTITY_COLLAPSE_AND_DUPLICATED_OR_EXTRA_TURNS",
+      "attempts": [
+        "R01",
+        "R02",
+        "R03"
+      ],
+      "best_evidence": "R01 renders all three exact authored lines once and in order, but Shot X-Ray diarizes one speaker across the required Omar/Lina/Omar exchange. R02 retains one speaker and adds an unauthorized sentence at 4.88-7.02s. R03 retains one speaker and duplicates the first Omar and Lina turns before the required sequence. Full Shot X-Ray jobs: 604e4a0f1c98, b1140e29e7ea, 3c1255f1e639.",
+      "dependency_impact": "Isolated hard-cut blocker. MATTER-020 and all later independent ORIGINAL starts remain executable.",
+      "required_future_repair_owner": "CRD_LTX_DIALOGUE_TURN_AND_VOICE_IDENTITY_ISOLATION",
+      "status": "DEFERRED_BLOCKER",
+      "current_recovery_units": [
+        "MATTER-019"
       ]
     }
   ],
@@ -376,10 +392,10 @@
       "start_binding": "ORIGINAL_19",
       "description": "At the vehicle, Omar confirms the human-provenance appeal route and Amina's name.",
       "dialogue_route": "MULTI_VISIBLE_TURN_TAKING — one mouth active at a time; verify current executor/workflow",
-      "status": "ATTEMPTED_NOT_ACCEPTED",
+      "status": "DEFERRED_BLOCKER",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
+      "qc_note": "R01 renders all three exact authored lines once and in order, but Shot X-Ray diarizes one speaker across the required Omar/Lina/Omar exchange. R02 retains one speaker and adds an unauthorized sentence at 4.88-7.02s. R03 retains one speaker and duplicates the first Omar and Lina turns before the required sequence. Full Shot X-Ray jobs: 604e4a0f1c98, b1140e29e7ea, 3c1255f1e639."
     },
     {
       "shot_id": "MATTER-020",
@@ -390,10 +406,10 @@
       "start_binding": "ORIGINAL_20",
       "description": "Material Commons exterior establishes the destination.",
       "dialogue_route": "NO AUTHORED DIALOGUE",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-021",
