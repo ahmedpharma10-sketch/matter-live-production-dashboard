@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-29T17:43:33.921943+00:00",
+  "updated_at": "2026-08-29T18:07:34.474175+00:00",
   "total_units": 166,
   "counts": {
-    "ACCEPTED_CURRENT": 25,
-    "ATTEMPTED_NOT_ACCEPTED": 6,
+    "ACCEPTED_CURRENT": 27,
+    "ATTEMPTED_NOT_ACCEPTED": 5,
     "DEFERRED_BLOCKER": 13,
-    "NOT_YET_ATTEMPTED": 122
+    "NOT_YET_ATTEMPTED": 121
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -27,7 +27,7 @@
     "note": "All catalog START bindings are shown; public image-grid reconciliation remains pending."
   },
   "not_updated_yet": [
-    "B01-B05 coverage is closed. B06 is active: MATTER-031 R01 is accepted with a safe trim-tail note; MATTER-032 onward remain pending. MATTER-027 remains deferred after bounded timing/speaker recovery.",
+    "B01-B05 coverage is closed. B06 is active: MATTER-034 R01 and MATTER-035 R01 are newly accepted after full direct and Shot X-Ray QC; MATTER-032, MATTER-033, and MATTER-036 are in bounded recovery, MATTER-037-MATTER-038 are under QC, and later units remain pending. MATTER-027 remains deferred.",
     "Reference image bank and complete public keyframe image grid are not yet reconciled into this first dashboard deployment.",
     "Accepted-duration assembly and final film delivery remain pending because required final-picture units are still outstanding.",
     "The local Ahmed Brain checkout has a pre-existing unresolved merge conflict in report 42; GitHub updates use a clean origin/master worktree to preserve both sides."
@@ -665,10 +665,10 @@
       "start_binding": "ORIGINAL_34",
       "description": "Amina pushes the central distinction between recognizable replicas and physical provenance; Omar reframes the problem as Noor's right to define value.",
       "dialogue_route": "SINGLE SPEAKER: AMINA",
-      "status": "ATTEMPTED_NOT_ACCEPTED",
-      "take": null,
-      "review_proxy": null,
-      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
+      "status": "ACCEPTED_CURRENT",
+      "take": "R01",
+      "review_proxy": "media/MATTER-034_R01.mp4",
+      "qc_note": "Accepted after current technical, direct moving/performance, dialogue/speaker, and Shot X-Ray QC."
     },
     {
       "shot_id": "MATTER-035",
@@ -679,10 +679,10 @@
       "start_binding": "ORIGINAL_35",
       "description": "Amina pushes the central distinction between recognizable replicas and physical provenance; Omar reframes the problem as Noor's right to define value.",
       "dialogue_route": "SINGLE SPEAKER: OMAR",
-      "status": "ATTEMPTED_NOT_ACCEPTED",
-      "take": null,
-      "review_proxy": null,
-      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
+      "status": "ACCEPTED_CURRENT",
+      "take": "R01",
+      "review_proxy": "media/MATTER-035_R01.mp4",
+      "qc_note": "Accepted after current technical, direct moving/performance, dialogue/speaker, and Shot X-Ray QC."
     },
     {
       "shot_id": "MATTER-036",
@@ -721,10 +721,10 @@
       "start_binding": "ORIGINAL_38",
       "description": "Amina agrees to perform an in-home audit and the trio consolidates for departure.",
       "dialogue_route": "SINGLE SPEAKER: AMINA",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-039",
