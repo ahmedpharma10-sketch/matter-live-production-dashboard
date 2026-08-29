@@ -3,12 +3,12 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-29T15:03:41.482750+00:00",
+  "updated_at": "2026-08-29T15:31:44.798401+00:00",
   "total_units": 166,
   "counts": {
-    "ACCEPTED_CURRENT": 21,
-    "DEFERRED_BLOCKER": 12,
-    "NOT_YET_ATTEMPTED": 133
+    "ACCEPTED_CURRENT": 22,
+    "DEFERRED_BLOCKER": 13,
+    "NOT_YET_ATTEMPTED": 131
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -26,7 +26,7 @@
     "note": "All catalog START bindings are shown; public image-grid reconciliation remains pending."
   },
   "not_updated_yet": [
-    "B01-B04 coverage is closed. B05 is active: MATTER-026 R01 is accepted; MATTER-027 onward remain pending in the coverage sweep.",
+    "B01-B04 coverage is closed. B05 is active: MATTER-026 R01 and MATTER-028 R01 are accepted; MATTER-027 is deferred after bounded timing/speaker recovery; MATTER-029 onward remain pending.",
     "Reference image bank and complete public keyframe image grid are not yet reconciled into this first dashboard deployment.",
     "Accepted-duration assembly and final film delivery remain pending because required final-picture units are still outstanding.",
     "The local Ahmed Brain checkout has a pre-existing unresolved merge conflict in report 42; GitHub updates use a clean origin/master worktree to preserve both sides."
@@ -215,6 +215,22 @@
       "status": "DEFERRED_BLOCKER",
       "current_recovery_units": [
         "MATTER-024"
+      ]
+    },
+    {
+      "shot_unit_id": "MATTER-027",
+      "failure_class": "DIALOGUE_TIMING_AND_SPEAKER_OWNERSHIP_COLLAPSE_WITH_DUPLICATED_RECOVERY_TURN",
+      "attempts": [
+        "R01",
+        "R02",
+        "R03"
+      ],
+      "best_evidence": "R01 preserves correct Amina speaker ownership and exact line once, but ASR begins at 0.46s before the authored +0.65s onset; Full Shot X-Ray job 33ee93640eb0. R02 timing-only recovery visibly assigns articulation to Halim and is rejected by direct moving review before Full Shot X-Ray. R03 speaker-ownership-only recovery renders the exact line twice at 0.00-0.74s and 2.34-3.12s; Full Shot X-Ray job 8962db62dde6.",
+      "dependency_impact": "Isolated hard-cut blocker. MATTER-028 and all later independent ORIGINAL starts remain executable.",
+      "required_future_repair_owner": "CRD_LTX_DIALOGUE_TIMING_AND_VISIBLE_SPEAKER_OWNERSHIP",
+      "status": "DEFERRED_BLOCKER",
+      "current_recovery_units": [
+        "MATTER-027"
       ]
     }
   ],
@@ -550,10 +566,10 @@
       "start_binding": "ORIGINAL_27",
       "description": "Lina begins the appeal request; Amina tests whether Lina can name any reason the originals matter beyond access or appearance.",
       "dialogue_route": "SINGLE SPEAKER: AMINA",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "DEFERRED_BLOCKER",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "R01 preserves correct Amina speaker ownership and exact line once, but ASR begins at 0.46s before the authored +0.65s onset; Full Shot X-Ray job 33ee93640eb0. R02 timing-only recovery visibly assigns articulation to Halim and is rejected by direct moving review before Full Shot X-Ray. R03 speaker-ownership-only recovery renders the exact line twice at 0.00-0.74s and 2.34-3.12s; Full Shot X-Ray job 8962db62dde6."
     },
     {
       "shot_id": "MATTER-028",
@@ -564,10 +580,10 @@
       "start_binding": "ORIGINAL_28",
       "description": "Communal-hall wide cutaway holds the social context while the appeal request begins across the connected hall/corridor threshold.",
       "dialogue_route": "NO AUTHORED DIALOGUE",
-      "status": "NOT_YET_ATTEMPTED",
-      "take": null,
-      "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "status": "ACCEPTED_CURRENT",
+      "take": "R01",
+      "review_proxy": "media/MATTER-028_R01.mp4",
+      "qc_note": "Accepted after current technical, direct moving/performance, dialogue/speaker, and Shot X-Ray QC."
     },
     {
       "shot_id": "MATTER-029",
