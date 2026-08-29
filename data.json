@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-29T20:45:52.449130+00:00",
+  "updated_at": "2026-08-29T21:08:29.734366+00:00",
   "total_units": 166,
   "counts": {
     "ACCEPTED_CURRENT": 28,
-    "ATTEMPTED_NOT_ACCEPTED": 22,
+    "ATTEMPTED_NOT_ACCEPTED": 25,
     "DEFERRED_BLOCKER": 13,
-    "NOT_YET_ATTEMPTED": 103
+    "NOT_YET_ATTEMPTED": 100
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -26,8 +26,77 @@
     "status": "START_BINDINGS_LISTED_PER_SHOT",
     "note": "All catalog START bindings are shown; public image-grid reconciliation remains pending."
   },
+  "render_first_lanes": {
+    "schema": "matter-render-first-decoupled-lanes-v1",
+    "updated_at": "2026-08-29T21:06:30Z",
+    "session_id": "S08-PRODUCTION-20260829-01a04d12",
+    "production_owner": "CURRENT_ROOT_THREAD_ONLY",
+    "pipeline_mode": "PRODUCTION_FAST_RENDER",
+    "route": "LTX_FREEDOM_PROVEN",
+    "lane_a_render_producer": {
+      "state": "RENDERING",
+      "in_flight_unit": "MATTER-059",
+      "attempt": "R01",
+      "prompt_id": "f097298f-5889-45c0-a63e-657cf91d6d17",
+      "comfy_pid": 4048,
+      "comfy_endpoint": "http://127.0.0.1:8190",
+      "gpu_owner_exclusive": true,
+      "two_ltx_jobs_forbidden": true
+    },
+    "lane_b_prep_interpretation": {
+      "state": "DURABLE_CATALOG_PREPARED",
+      "prep_backlog_queue_size": 0,
+      "note": "All remaining catalog units have nonempty durable prompts and START bindings; no helper-model reload is required for current coverage."
+    },
+    "lane_c_qc_consumer": {
+      "state": "ASYNC_ACTIVE",
+      "rendered_pending_qc_queue": [
+        "MATTER-056/R01",
+        "MATTER-057/R01",
+        "MATTER-058/R01"
+      ],
+      "full_xray_active": "MATTER-058/R01",
+      "recent_full_xray_mean_seconds": 96.09,
+      "recent_full_xray_median_seconds": 91.4
+    },
+    "lane_d_recovery": {
+      "state": "DEFERRED_TO_RECOVERY_SWEEP",
+      "recovery_queue_size": 21,
+      "deferred_blocker_queue_size": 13
+    },
+    "lane_e_evidence_ledgers": {
+      "state": "SIDE_LANE",
+      "must_not_block_render_submit": true,
+      "historical_reconciliation": [
+        "MATTER-002/R01 attempt-local Full Shot X-Ray receipt location mismatch"
+      ]
+    },
+    "queues": {
+      "ready_to_render_queue_size": 100,
+      "rendered_pending_qc_queue_size": 3,
+      "recovery_queue_size": 21,
+      "deferred_blocker_queue_size": 13,
+      "prep_backlog_queue_size": 0,
+      "accepted_current_size": 28,
+      "in_flight_size": 1
+    },
+    "throughput": {
+      "recent_render_wall_mean_seconds": 136.4,
+      "current_wrapper_prep_mean_seconds": 19.86,
+      "serial_mini_contact_mean_seconds": 5.34,
+      "continuous_unchanged_runner_estimate_shots_per_hour": 22.3,
+      "previous_observed_dispatch_cadence_shots_per_hour": 6.8,
+      "recent_full_xray_capacity_shots_per_hour": 37.5
+    },
+    "remaining_critical_path_bottlenecks": [
+      "Mandatory current stable live-state, identity/headroom, preflight, authorization, guarded submit, and prompt-ID confirmation remain serial and cannot be bypassed.",
+      "The current wrapper performs an apparently duplicated live-state/Mac-receipt cycle costing about 9.7 seconds per shot; removal requires separate ENGINEERING_QUALIFICATION and a fresh production session.",
+      "Pinned Mini Shot X-Ray plus contact-sheet generation remain serial for about 3-8 seconds per shot until concurrency or deferral is separately qualified.",
+      "The dominant measured loss was orchestration/heartbeat dispatch idle; continuous unchanged-runner invocation is the immediate lawful correction."
+    ]
+  },
   "not_updated_yet": [
-    "Continuous coverage has reached B09. MATTER-052 R01 is accepted after full direct and Shot X-Ray QC; failed independent candidates remain in bounded recovery while later accepted-START units continue. Movie completion remains NO.",
+    "Render-first decoupled scheduling is active. The sole Windows LTX producer continues independent accepted-START units while Mac Full Shot X-Ray consumes completed clips asynchronously; current queue truth is displayed below.",
     "Reference image bank and complete public keyframe image grid are not yet reconciled into this first dashboard deployment.",
     "Accepted-duration assembly and final film delivery remain pending because required final-picture units are still outstanding.",
     "The local Ahmed Brain checkout has a pre-existing unresolved merge conflict in report 42; GitHub updates use a clean origin/master worktree to preserve both sides."
@@ -987,10 +1056,10 @@
       "start_binding": "ORIGINAL_57",
       "description": "The audit intensifies. Amina and Omar force Lina to distinguish 'looks the same' from 'was actually there.'",
       "dialogue_route": "MULTI_VISIBLE_TURN_TAKING — one mouth active at a time; verify current executor/workflow",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-058",
@@ -1001,10 +1070,10 @@
       "start_binding": "ORIGINAL_58",
       "description": "The audit intensifies. Amina and Omar force Lina to distinguish 'looks the same' from 'was actually there.'",
       "dialogue_route": "SINGLE SPEAKER: LINA",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-059",
@@ -1015,10 +1084,10 @@
       "start_binding": "ORIGINAL_59",
       "description": "The audit intensifies. Amina and Omar force Lina to distinguish 'looks the same' from 'was actually there.'",
       "dialogue_route": "SINGLE SPEAKER: AMINA",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-060",
