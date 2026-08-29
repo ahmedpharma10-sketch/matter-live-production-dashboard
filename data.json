@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-29T13:53:30.231494+00:00",
+  "updated_at": "2026-08-29T14:16:12.393161+00:00",
   "total_units": 166,
   "counts": {
-    "ACCEPTED_CURRENT": 18,
+    "ACCEPTED_CURRENT": 19,
     "ATTEMPTED_NOT_ACCEPTED": 1,
-    "DEFERRED_BLOCKER": 9,
-    "NOT_YET_ATTEMPTED": 138
+    "DEFERRED_BLOCKER": 10,
+    "NOT_YET_ATTEMPTED": 136
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -169,6 +169,22 @@
       "status": "DEFERRED_BLOCKER",
       "current_recovery_units": [
         "MATTER-019"
+      ]
+    },
+    {
+      "shot_unit_id": "MATTER-021",
+      "failure_class": "MULTI_SPEAKER_IDENTITY_COLLAPSE_AND_EARLY_LATER_TURNS",
+      "attempts": [
+        "R01",
+        "R02",
+        "R03"
+      ],
+      "best_evidence": "All three attempts render the three exact authored lines once and in order, but Shot X-Ray diarizes only one speaker for Omar/Lina/Omar. R01 lines: 1.65-3.19, 3.99-4.99, 5.79-6.57; R02: 1.42-2.80, 3.08-3.54, 5.80-6.64; R03: 0.91-2.49, 3.23-3.99, 4.63-5.53. Later turns remain materially earlier than +5.10 and +8.00. Full Shot X-Ray jobs: 669466e140fb, 3655b86428a7, 93274454b34f.",
+      "dependency_impact": "Isolated hard-cut blocker. MATTER-022 and later independent ORIGINAL starts remain executable.",
+      "required_future_repair_owner": "CRD_LTX_DIALOGUE_TURN_AND_VOICE_IDENTITY_ISOLATION",
+      "status": "DEFERRED_BLOCKER",
+      "current_recovery_units": [
+        "MATTER-021"
       ]
     }
   ],
@@ -420,10 +436,10 @@
       "start_binding": "ORIGINAL_21",
       "description": "Lina and Omar move through the Commons corridor, searching for Amina among the residents.",
       "dialogue_route": "MULTI_VISIBLE_TURN_TAKING — one mouth active at a time; verify current executor/workflow",
-      "status": "ATTEMPTED_NOT_ACCEPTED",
+      "status": "DEFERRED_BLOCKER",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
+      "qc_note": "All three attempts render the three exact authored lines once and in order, but Shot X-Ray diarizes only one speaker for Omar/Lina/Omar. R01 lines: 1.65-3.19, 3.99-4.99, 5.79-6.57; R02: 1.42-2.80, 3.08-3.54, 5.80-6.64; R03: 0.91-2.49, 3.23-3.99, 4.63-5.53. Later turns remain materially earlier than +5.10 and +8.00. Full Shot X-Ray jobs: 669466e140fb, 3655b86428a7, 93274454b34f."
     },
     {
       "shot_id": "MATTER-022",
@@ -434,10 +450,10 @@
       "start_binding": "ORIGINAL_22",
       "description": "Communal-hall wide cutaway establishes the resident crowd/search field as Lina and Omar approach Amina's area.",
       "dialogue_route": "NO AUTHORED DIALOGUE",
-      "status": "NOT_YET_ATTEMPTED",
-      "take": null,
-      "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "status": "ACCEPTED_CURRENT",
+      "take": "R01",
+      "review_proxy": "media/MATTER-022_R01.mp4",
+      "qc_note": "Accepted after current technical, direct moving/performance, dialogue/speaker, and Shot X-Ray QC."
     },
     {
       "shot_id": "MATTER-023",
@@ -448,10 +464,10 @@
       "start_binding": "ORIGINAL_23",
       "description": "Lina and Omar move through the Commons corridor, searching for Amina among the residents.",
       "dialogue_route": "SINGLE SPEAKER: LINA",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-024",
