@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-29T18:07:34.474175+00:00",
+  "updated_at": "2026-08-29T18:30:07.776106+00:00",
   "total_units": 166,
   "counts": {
     "ACCEPTED_CURRENT": 27,
-    "ATTEMPTED_NOT_ACCEPTED": 5,
+    "ATTEMPTED_NOT_ACCEPTED": 7,
     "DEFERRED_BLOCKER": 13,
-    "NOT_YET_ATTEMPTED": 121
+    "NOT_YET_ATTEMPTED": 119
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -735,10 +735,10 @@
       "start_binding": "ORIGINAL_39",
       "description": "Amina agrees to perform an in-home audit and the trio consolidates for departure.",
       "dialogue_route": "MULTI_VISIBLE_TURN_TAKING — one mouth active at a time; verify current executor/workflow",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-040",
@@ -749,10 +749,10 @@
       "start_binding": "ORIGINAL_40",
       "description": "Car interior: Lina, Omar and Amina sit in a new, uneasy trio after the pickup.",
       "dialogue_route": "SINGLE SPEAKER: AMINA",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-041",
