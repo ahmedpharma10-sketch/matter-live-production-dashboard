@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-29T14:16:12.393161+00:00",
+  "updated_at": "2026-08-29T14:34:44.779532+00:00",
   "total_units": 166,
   "counts": {
     "ACCEPTED_CURRENT": 19,
     "ATTEMPTED_NOT_ACCEPTED": 1,
-    "DEFERRED_BLOCKER": 10,
-    "NOT_YET_ATTEMPTED": 136
+    "DEFERRED_BLOCKER": 12,
+    "NOT_YET_ATTEMPTED": 134
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -185,6 +185,37 @@
       "status": "DEFERRED_BLOCKER",
       "current_recovery_units": [
         "MATTER-021"
+      ]
+    },
+    {
+      "shot_unit_id": "MATTER-023",
+      "failure_class": "SINGLE_LINE_REMAINS_EARLY_AND_DUPLICATES_UNDER_TIMING_RECOVERY",
+      "attempts": [
+        "R01_PREFLIGHT_FAIL_NO_SUBMISSION",
+        "R02",
+        "R03"
+      ],
+      "best_evidence": "R01 failed closed before submission because the caller supplied a missing Gemma receipt path; full receipt preserved. R02 renders exact 'Which one?' once at 0.00-0.58s instead of +1.95-2.80s. R03 timing-only recovery renders 'Which one which one' at 0.02-1.78s. Full Shot X-Ray jobs: 81bed0c5bcd2, 1fcd67ffc924.",
+      "dependency_impact": "Isolated hard-cut blocker. MATTER-024 and later independent ORIGINAL starts remain executable.",
+      "required_future_repair_owner": "CRD_LTX_DIALOGUE_TIMING_CONTROL",
+      "status": "DEFERRED_BLOCKER",
+      "current_recovery_units": [
+        "MATTER-023"
+      ]
+    },
+    {
+      "shot_unit_id": "MATTER-024",
+      "failure_class": "SHOT_MORPHS_FROM_AUTHORIZED_TWO_SHOT_TO_UNAUTHORIZED_CROWD_WIDE",
+      "attempts": [
+        "R01",
+        "R02"
+      ],
+      "best_evidence": "R01 renders exact 'There' once near the early window, then dissolves/morphs from the authorized Omar/Lina two-shot into a new crowd wide with added people. R02 changes only composition stability but repeats the same unauthorized crowd-wide morph. R01 full Shot X-Ray job ad44710ccd5e; dense contacts preserved for both attempts.",
+      "dependency_impact": "Isolated hard-cut blocker. MATTER-025 and later independent ORIGINAL starts remain executable.",
+      "required_future_repair_owner": "CRD_LTX_SCENE_AND_COMPOSITION_STABILITY",
+      "status": "DEFERRED_BLOCKER",
+      "current_recovery_units": [
+        "MATTER-024"
       ]
     }
   ],
@@ -464,10 +495,10 @@
       "start_binding": "ORIGINAL_23",
       "description": "Lina and Omar move through the Commons corridor, searching for Amina among the residents.",
       "dialogue_route": "SINGLE SPEAKER: LINA",
-      "status": "ATTEMPTED_NOT_ACCEPTED",
+      "status": "DEFERRED_BLOCKER",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
+      "qc_note": "R01 failed closed before submission because the caller supplied a missing Gemma receipt path; full receipt preserved. R02 renders exact 'Which one?' once at 0.00-0.58s instead of +1.95-2.80s. R03 timing-only recovery renders 'Which one which one' at 0.02-1.78s. Full Shot X-Ray jobs: 81bed0c5bcd2, 1fcd67ffc924."
     },
     {
       "shot_id": "MATTER-024",
@@ -478,10 +509,10 @@
       "start_binding": "ORIGINAL_24",
       "description": "Lina and Omar move through the Commons corridor, searching for Amina among the residents.",
       "dialogue_route": "SINGLE SPEAKER: OMAR",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "DEFERRED_BLOCKER",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "R01 renders exact 'There' once near the early window, then dissolves/morphs from the authorized Omar/Lina two-shot into a new crowd wide with added people. R02 changes only composition stability but repeats the same unauthorized crowd-wide morph. R01 full Shot X-Ray job ad44710ccd5e; dense contacts preserved for both attempts."
     },
     {
       "shot_id": "MATTER-025",
@@ -492,10 +523,10 @@
       "start_binding": "ORIGINAL_25",
       "description": "Amina is revealed seated with Halim in the communal hall.",
       "dialogue_route": "NO AUTHORED DIALOGUE",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-026",
