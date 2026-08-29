@@ -1,0 +1,9 @@
+{
+  "schema": "MATTER_OWNER_DASHBOARD_TELEGRAM_LINK_DELIVERY_V1",
+  "status": "SENT",
+  "url": "https://ahmedpharma10-sketch.github.io/matter-live-production-dashboard/",
+  "route": "WINDOWS_PHONETRANSFER_TELEGRAM_MESSAGE",
+  "response": {"sentMessage": true, "parts": 1, "messageIds": [4558]},
+  "sent_at": "2026-08-29T13:16:00Z",
+  "secrets_included": false
+}
