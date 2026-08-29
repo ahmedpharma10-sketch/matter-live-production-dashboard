@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-29T20:22:14.309038+00:00",
+  "updated_at": "2026-08-29T20:24:12.768872+00:00",
   "total_units": 166,
   "counts": {
     "ACCEPTED_CURRENT": 28,
-    "ATTEMPTED_NOT_ACCEPTED": 19,
+    "ATTEMPTED_NOT_ACCEPTED": 20,
     "DEFERRED_BLOCKER": 13,
-    "NOT_YET_ATTEMPTED": 106
+    "NOT_YET_ATTEMPTED": 105
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -945,10 +945,10 @@
       "start_binding": "ORIGINAL_54",
       "description": "The audit intensifies. Amina and Omar force Lina to distinguish 'looks the same' from 'was actually there.'",
       "dialogue_route": "SINGLE SPEAKER: LINA",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-055",
