@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-29T23:37:33.355468+00:00",
+  "updated_at": "2026-08-29T23:58:21.059606+00:00",
   "total_units": 166,
   "counts": {
     "ACCEPTED_CURRENT": 28,
-    "ATTEMPTED_NOT_ACCEPTED": 34,
+    "ATTEMPTED_NOT_ACCEPTED": 35,
     "DEFERRED_BLOCKER": 13,
-    "NOT_YET_ATTEMPTED": 91
+    "NOT_YET_ATTEMPTED": 90
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -28,16 +28,16 @@
   },
   "render_first_lanes": {
     "schema": "matter-render-first-decoupled-lanes-v1",
-    "updated_at": "2026-08-29T23:37:00Z",
+    "updated_at": "2026-08-29T23:57:00Z",
     "session_id": "S08-PRODUCTION-20260829-01a04d12",
     "production_owner": "CURRENT_ROOT_THREAD_ONLY",
     "pipeline_mode": "PRODUCTION_FAST_RENDER",
     "route": "LTX_FREEDOM_PROVEN",
     "lane_a_render_producer": {
       "state": "RENDERING",
-      "in_flight_unit": "MATTER-070",
+      "in_flight_unit": "MATTER-71A",
       "attempt": "R01",
-      "prompt_id": "aa19d863-60ef-4c0f-a139-f47e133454d3",
+      "prompt_id": "03b009a1-2479-4803-adc4-4a169cbb369f",
       "comfy_pid": 4048,
       "comfy_endpoint": "http://127.0.0.1:8190",
       "gpu_owner_exclusive": true,
@@ -62,9 +62,10 @@
         "MATTER-066/R01",
         "MATTER-067/R01",
         "MATTER-068/R01",
-        "MATTER-069/R01"
+        "MATTER-069/R01",
+        "MATTER-070/R01"
       ],
-      "full_xray_active": "MATTER-069/R01",
+      "full_xray_active": "MATTER-070/R01",
       "recent_full_xray_mean_seconds": 96.09,
       "recent_full_xray_median_seconds": 91.4
     },
@@ -81,8 +82,8 @@
       ]
     },
     "queues": {
-      "ready_to_render_queue_size": 91,
-      "rendered_pending_qc_queue_size": 12,
+      "ready_to_render_queue_size": 90,
+      "rendered_pending_qc_queue_size": 13,
       "recovery_queue_size": 21,
       "deferred_blocker_queue_size": 13,
       "prep_backlog_queue_size": 0,
@@ -2367,10 +2368,10 @@
       "start_binding": "KF-71A-R1",
       "description": "",
       "dialogue_route": "No dialogue.",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-71B",
