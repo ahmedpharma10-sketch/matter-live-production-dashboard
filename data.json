@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-29T18:30:07.776106+00:00",
+  "updated_at": "2026-08-29T18:52:38.513223+00:00",
   "total_units": 166,
   "counts": {
     "ACCEPTED_CURRENT": 27,
-    "ATTEMPTED_NOT_ACCEPTED": 7,
+    "ATTEMPTED_NOT_ACCEPTED": 9,
     "DEFERRED_BLOCKER": 13,
-    "NOT_YET_ATTEMPTED": 119
+    "NOT_YET_ATTEMPTED": 117
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -763,10 +763,10 @@
       "start_binding": "ORIGINAL_41",
       "description": "Foggy return road gives the story a quiet reset before the home audit.",
       "dialogue_route": "NO AUTHORED DIALOGUE",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-042",
@@ -777,10 +777,10 @@
       "start_binding": "ORIGINAL_42",
       "description": "The trio enters the dark apartment review area where disputed physical objects have been staged.",
       "dialogue_route": "NO AUTHORED DIALOGUE",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-043",
