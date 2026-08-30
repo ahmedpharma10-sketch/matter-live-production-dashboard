@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-30T01:13:38.362070+00:00",
+  "updated_at": "2026-08-30T01:31:54.911850+00:00",
   "total_units": 166,
   "counts": {
     "ACCEPTED_CURRENT": 28,
-    "ATTEMPTED_NOT_ACCEPTED": 39,
+    "ATTEMPTED_NOT_ACCEPTED": 40,
     "DEFERRED_BLOCKER": 13,
-    "NOT_YET_ATTEMPTED": 86
+    "NOT_YET_ATTEMPTED": 85
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -28,16 +28,16 @@
   },
   "render_first_lanes": {
     "schema": "matter-render-first-decoupled-lanes-v1",
-    "updated_at": "2026-08-30T01:13:00Z",
+    "updated_at": "2026-08-30T01:31:00Z",
     "session_id": "S08-PRODUCTION-20260829-01a04d12",
     "production_owner": "CURRENT_ROOT_THREAD_ONLY",
     "pipeline_mode": "PRODUCTION_FAST_RENDER",
     "route": "LTX_FREEDOM_PROVEN",
     "lane_a_render_producer": {
       "state": "RENDERING",
-      "in_flight_unit": "MATTER-075",
+      "in_flight_unit": "MATTER-076",
       "attempt": "R01",
-      "prompt_id": "199d7927-9699-4ea7-9180-66f1fdce55ce",
+      "prompt_id": "023ef6fd-57bd-4c62-a579-9d24ef0fa039",
       "comfy_pid": 4048,
       "comfy_endpoint": "http://127.0.0.1:8190",
       "gpu_owner_exclusive": true,
@@ -67,9 +67,10 @@
         "MATTER-71A/R01",
         "MATTER-072/R01",
         "MATTER-073/R01",
-        "MATTER-074/R01"
+        "MATTER-074/R01",
+        "MATTER-075/R01"
       ],
-      "full_xray_active": "MATTER-074/R01",
+      "full_xray_active": "MATTER-075/R01",
       "recent_full_xray_mean_seconds": 96.09,
       "recent_full_xray_median_seconds": 91.4
     },
@@ -86,8 +87,8 @@
       ]
     },
     "queues": {
-      "ready_to_render_queue_size": 86,
-      "rendered_pending_qc_queue_size": 17,
+      "ready_to_render_queue_size": 85,
+      "rendered_pending_qc_queue_size": 18,
       "recovery_queue_size": 21,
       "deferred_blocker_queue_size": 13,
       "prep_backlog_queue_size": 0,
@@ -1294,10 +1295,10 @@
       "start_binding": "ORIGINAL_76",
       "description": "Amina sets the rule: defend one physical object without mentioning usefulness, price, or replica quality.",
       "dialogue_route": "SINGLE SPEAKER: AMINA",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-077",
