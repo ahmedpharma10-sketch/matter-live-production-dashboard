@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-30T01:49:45.649815+00:00",
+  "updated_at": "2026-08-30T02:07:38.467888+00:00",
   "total_units": 166,
   "counts": {
     "ACCEPTED_CURRENT": 28,
-    "ATTEMPTED_NOT_ACCEPTED": 41,
+    "ATTEMPTED_NOT_ACCEPTED": 42,
     "DEFERRED_BLOCKER": 13,
-    "NOT_YET_ATTEMPTED": 84
+    "NOT_YET_ATTEMPTED": 83
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -28,16 +28,16 @@
   },
   "render_first_lanes": {
     "schema": "matter-render-first-decoupled-lanes-v1",
-    "updated_at": "2026-08-30T01:49:00Z",
+    "updated_at": "2026-08-30T02:07:00Z",
     "session_id": "S08-PRODUCTION-20260829-01a04d12",
     "production_owner": "CURRENT_ROOT_THREAD_ONLY",
     "pipeline_mode": "PRODUCTION_FAST_RENDER",
     "route": "LTX_FREEDOM_PROVEN",
     "lane_a_render_producer": {
       "state": "RENDERING",
-      "in_flight_unit": "MATTER-077",
+      "in_flight_unit": "MATTER-078",
       "attempt": "R01",
-      "prompt_id": "46ee952b-f3c2-4ff0-a619-f9e3daace469",
+      "prompt_id": "8afb15c5-4d51-48fd-85ed-1f5f5ea32d5e",
       "comfy_pid": 4048,
       "comfy_endpoint": "http://127.0.0.1:8190",
       "gpu_owner_exclusive": true,
@@ -69,9 +69,10 @@
         "MATTER-073/R01",
         "MATTER-074/R01",
         "MATTER-075/R01",
-        "MATTER-076/R01"
+        "MATTER-076/R01",
+        "MATTER-077/R01"
       ],
-      "full_xray_active": "MATTER-076/R01",
+      "full_xray_active": "MATTER-077/R01",
       "recent_full_xray_mean_seconds": 96.09,
       "recent_full_xray_median_seconds": 91.4
     },
@@ -88,8 +89,8 @@
       ]
     },
     "queues": {
-      "ready_to_render_queue_size": 84,
-      "rendered_pending_qc_queue_size": 19,
+      "ready_to_render_queue_size": 83,
+      "rendered_pending_qc_queue_size": 20,
       "recovery_queue_size": 21,
       "deferred_blocker_queue_size": 13,
       "prep_backlog_queue_size": 0,
@@ -1324,10 +1325,10 @@
       "start_binding": "ORIGINAL_78",
       "description": "Serving and eating continue while Omar succeeds at naming a human reason and Lina keeps retreating into system logic.",
       "dialogue_route": "NO AUTHORED DIALOGUE",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-079",
