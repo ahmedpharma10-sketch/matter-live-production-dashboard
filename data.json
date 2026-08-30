@@ -3,13 +3,13 @@
   "project_id": "MATTER-AAIFF-ASTANA-2026",
   "film_title": "MATTER",
   "session": "S08-PRODUCTION-20260829-01a04d12",
-  "updated_at": "2026-08-30T04:33:45.335070+00:00",
+  "updated_at": "2026-08-30T04:53:49.017418+00:00",
   "total_units": 166,
   "counts": {
     "ACCEPTED_CURRENT": 28,
-    "ATTEMPTED_NOT_ACCEPTED": 50,
+    "ATTEMPTED_NOT_ACCEPTED": 51,
     "DEFERRED_BLOCKER": 13,
-    "NOT_YET_ATTEMPTED": 75
+    "NOT_YET_ATTEMPTED": 74
   },
   "pipeline_mode": "PRODUCTION_FAST_RENDER",
   "route": "LTX_FREEDOM_PROVEN",
@@ -28,16 +28,16 @@
   },
   "render_first_lanes": {
     "schema": "matter-render-first-decoupled-lanes-v1",
-    "updated_at": "2026-08-30T04:33:00Z",
+    "updated_at": "2026-08-30T04:53:00Z",
     "session_id": "S08-PRODUCTION-20260829-01a04d12",
     "production_owner": "CURRENT_ROOT_THREAD_ONLY",
     "pipeline_mode": "PRODUCTION_FAST_RENDER",
     "route": "LTX_FREEDOM_PROVEN",
     "lane_a_render_producer": {
       "state": "RENDERING",
-      "in_flight_unit": "MATTER-086",
+      "in_flight_unit": "MATTER-087",
       "attempt": "R01",
-      "prompt_id": "454e142f-e557-4412-b546-2d2eb3c84137",
+      "prompt_id": "a7f13405-5b51-4f2a-a310-c58464ed6cbf",
       "comfy_pid": 4048,
       "comfy_endpoint": "http://127.0.0.1:8190",
       "gpu_owner_exclusive": true,
@@ -78,9 +78,10 @@
         "MATTER-082/R01",
         "MATTER-083/R01",
         "MATTER-084/R01",
-        "MATTER-085/R01"
+        "MATTER-085/R01",
+        "MATTER-086/R01"
       ],
-      "full_xray_active": "MATTER-085/R01",
+      "full_xray_active": "MATTER-086/R01",
       "recent_full_xray_mean_seconds": 96.09,
       "recent_full_xray_median_seconds": 91.4
     },
@@ -97,8 +98,8 @@
       ]
     },
     "queues": {
-      "ready_to_render_queue_size": 75,
-      "rendered_pending_qc_queue_size": 28,
+      "ready_to_render_queue_size": 74,
+      "rendered_pending_qc_queue_size": 29,
       "recovery_queue_size": 21,
       "deferred_blocker_queue_size": 13,
       "prep_backlog_queue_size": 0,
@@ -1459,10 +1460,10 @@
       "start_binding": "ORIGINAL_87",
       "description": "Amina returns with her own worn useless object, proving she is not anti-AI or pro-hoarding; she simply chooses deliberately.",
       "dialogue_route": "SINGLE SPEAKER: AMINA",
-      "status": "NOT_YET_ATTEMPTED",
+      "status": "ATTEMPTED_NOT_ACCEPTED",
       "take": null,
       "review_proxy": null,
-      "qc_note": "Fresh production attempt pending."
+      "qc_note": "Attempt evidence exists; no current accepted take. See durable QC/decision receipts."
     },
     {
       "shot_id": "MATTER-088",
